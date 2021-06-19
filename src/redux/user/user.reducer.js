@@ -24,9 +24,7 @@ const defaultState = {
  * @param {*} action Redux
  * @returns new reduced state
  */
-function userReducer(state = defaultState, action) {
-  return runStrategy(strategies, state, action.payload)
-}
+const userReducer = (state = defaultState, action) => runStrategy(strategies, state, action)
 
 
 function login (state, payload) {
