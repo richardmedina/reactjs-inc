@@ -6,14 +6,16 @@ import Nav from 'react-bootstrap/Nav'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
+import { Link } from 'react-router-dom'
+
 
 const LayoutHeader = () =>
   <Navbar>
     <Navbar.Brand href='#'>HelloWorld!</Navbar.Brand>
 
     <Nav className='mr-auto'>
-      <Nav.Link href='#'>Home</Nav.Link>
-      <Nav.Link href='#'>About</Nav.Link>
+      <Nav.Link as={Link} to='/home'>Home</Nav.Link>
+      <Nav.Link as={Link} to='/about'>About</Nav.Link>
     </Nav>
 
     <Form inline>

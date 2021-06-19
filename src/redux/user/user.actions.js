@@ -1,9 +1,11 @@
 import UserTypes from './user.types'
 
 
-export const userLogin = () => ({
+export const userLogin = (userName, password) => ({
   type: UserTypes.LOGIN,
   payload: {
+    userName,
+    password,
     loading: false,
     error: null
   }
