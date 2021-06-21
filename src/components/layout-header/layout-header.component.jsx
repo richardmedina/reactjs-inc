@@ -13,7 +13,7 @@ const LayoutHeader = () =>
   <Navbar>
     <Navbar.Brand href='#'>HelloWorld!</Navbar.Brand>
 
-    <Nav>
+    <Nav className='mr-auto'>
       <Nav.Link as={Link} to='/home'>Home</Nav.Link>
       <Nav.Link as={Link} to='/about'>About</Nav.Link>
     </Nav>
