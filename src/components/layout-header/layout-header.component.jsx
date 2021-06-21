@@ -13,7 +13,7 @@ const LayoutHeader = () =>
   <Navbar>
     <Navbar.Brand href='#'>HelloWorld!</Navbar.Brand>
 
-    <Nav className='mr-auto'>
+    <Nav>
       <Nav.Link as={Link} to='/home'>Home</Nav.Link>
       <Nav.Link as={Link} to='/about'>About</Nav.Link>
     </Nav>
@@ -24,6 +24,10 @@ const LayoutHeader = () =>
         <Button variant='success' type='button'>Go</Button>
       </Form.Group>
     </Form>
+
+    <Nav>
+      <Nav.Link as={Link} to='/login'>Login</Nav.Link>
+    </Nav>
 
   </Navbar>
   
